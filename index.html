@@ -1,0 +1,2214 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Primary SEO -->
+        <title>ShopStore | Modern eCommerce Grocery Landing Page</title>
+        <meta name="description"
+            content="ShopStore is a modern grocery eCommerce landing page UI featuring categories, search, account, wishlist, and cart—fully responsive for all devices." />
+        <meta name="keywords"
+            content="ShopStore, grocery ecommerce, online grocery store, ecommerce landing page, categories menu, search bar, wishlist, shopping cart, responsive UI" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#6a56a6" />
+        <link rel="canonical" href="https://shopstoredemo.com/" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="ShopStore | Modern eCommerce Grocery Landing Page" />
+        <meta property="og:description"
+            content="ShopStore is a modern grocery eCommerce landing page UI with categories, search, wishlist, and cart." />
+        <meta property="og:url" content="https://shopstoredemo.com/" />
+        <meta property="og:image" content="https://shopstoredemo.com/images/og-image.png" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="ShopStore | Modern eCommerce Grocery Landing Page" />
+        <meta name="twitter:description"
+            content="ShopStore is a modern grocery eCommerce landing page UI with categories, search, wishlist, and cart." />
+        <meta name="twitter:image" content="https://shopstoredemo.com/images/og-image.png" />
+
+        <!-- Inter Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="icon" href="images/favicon.png" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <!-- ================== Top bar ================== -->
+        <div class="ss-topbar">
+            <div class="ss-container ss-topbar__inner">
+                <div class="ss-topbar__left">
+                    <a href="#" class="ss-topbar__link">About Us</a>
+                    <a href="#" class="ss-topbar__link">My account</a>
+                    <a href="#" class="ss-topbar__link">Wishlist</a>
+
+                    <span class="ss-topbar__pipe" aria-hidden="true">|</span>
+
+                    <span class="ss-topbar__msg">
+                        We deliver to you every day from <b>7:00 to 23:00</b>
+                    </span>
+                </div>
+
+                <div class="ss-topbar__right">
+                    <button class="ss-topbar__dd" type="button" aria-label="Language selector">
+                        <span>English</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+
+                    <span class="ss-topbar__pipe" aria-hidden="true">|</span>
+
+                    <button class="ss-topbar__dd" type="button" aria-label="Currency selector">
+                        <span>USD</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </button>
+
+                    <span class="ss-topbar__pipe" aria-hidden="true">|</span>
+
+                    <a href="#" class="ss-topbar__link">Order Tracking</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== Main header ================== -->
+        <header class="ss-header">
+            <div class="ss-container ss-header__inner">
+
+                <!-- Mobile menu -->
+                <button class="ss-hamburger" id="ssOpenMenu" aria-label="Open menu" aria-expanded="false">
+                    <span class="ss-hamburger__lines" aria-hidden="true"></span>
+                </button>
+
+                <!-- Brand -->
+                <a class="ss-brand" href="index.html" aria-label="ShopStore Home">
+                    <span class="ss-brand__badge" aria-hidden="true">
+                        <img src="images/brand-logo.png" alt="ShopStore">
+                    </span>
+                    <span class="ss-brand__text">ShopStore</span>
+                </a>
+
+                <!-- Location -->
+                <button class="ss-iconBtn ss-locBtn" type="button" aria-label="Location">
+                    <ion-icon name="location-outline"></ion-icon>
+                </button>
+
+                <!-- Categories -->
+                <button class="ss-catBtn" type="button" aria-label="Categories">
+                    <span class="ss-catBtn__icon">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </span>
+                    <span class="ss-catBtn__text">Categories</span>
+                </button>
+
+                <!-- Search -->
+                <div class="ss-search" role="search">
+                    <input type="text" class="ss-search__input" placeholder="Search for products, categories or brands..."
+                        aria-label="Search products" />
+                    <button class="ss-search__btn" type="button" aria-label="Search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <!-- Actions -->
+                <div class="ss-actions">
+                    <a href="#" class="ss-actionItem" aria-label="Account">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <span class="ss-actionItem__label">Account</span>
+                    </a>
+
+                    <a href="#" class="ss-actionItem" aria-label="Wishlist">
+                        <span class="ss-actionItem__iconWrap">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="ss-badge ss-badge--red">0</span>
+                        </span>
+                        <span class="ss-actionItem__label">Wishlist</span>
+                    </a>
+
+                    <a href="#" class="ss-actionItem" aria-label="Your Cart">
+                        <span class="ss-actionItem__iconWrap">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <span class="ss-badge ss-badge--red">0</span>
+                        </span>
+                        <span class="ss-actionItem__label">Your Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================== Menu row ================== -->
+        <nav class="ss-nav">
+            <div class="ss-container ss-nav__inner">
+
+                <ul class="ss-navLinks">
+                    <li class="ss-navItem ss-hasDrop">
+                        <a href="#" class="ss-navLink">Home <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    </li>
+                    <li class="ss-navItem ss-hasDrop">
+                        <a href="#" class="ss-navLink">Shop <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    </li>
+                    <li class="ss-navItem"><a href="#" class="ss-navLink">Fruits & Vegetables</a></li>
+                    <li class="ss-navItem"><a href="#" class="ss-navLink">Beverages</a></li>
+                    <li class="ss-navItem"><a href="#" class="ss-navLink">Blog</a></li>
+                    <li class="ss-navItem"><a href="#" class="ss-navLink">Contact</a></li>
+                </ul>
+
+                <div class="ss-navRight">
+                    <div class="ss-navItem ss-hasDrop">
+                        <a href="#" class="ss-navLink">Trending Products <ion-icon
+                                name="chevron-down-outline"></ion-icon></a>
+                    </div>
+
+                    <div class="ss-navItem ss-navHot">
+                        <a href="#" class="ss-navLink ss-navHot__link">
+                            <span class="ss-hotText">Almost Finished</span>
+                            <span class="ss-salePill">SALE</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ================== Mobile Drawer ================== -->
+        <div class="ss-overlay" id="ssOverlay" aria-hidden="true"></div>
+        <aside class="ss-drawer" id="ssDrawer" aria-label="Mobile menu">
+            <div class="ss-drawer__top">
+                <span class="ss-drawer__title">Menu</span>
+                <button class="ss-iconBtn ss-closeBtn" id="ssCloseMenu" type="button" aria-label="Close menu">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="ss-drawer__content">
+                <a href="#" class="ss-drawer__link">Home</a>
+                <a href="#" class="ss-drawer__link">Shop</a>
+                <a href="#" class="ss-drawer__link">Fruits & Vegetables</a>
+                <a href="#" class="ss-drawer__link">Beverages</a>
+                <a href="#" class="ss-drawer__link">Blog</a>
+                <a href="#" class="ss-drawer__link">Contact</a>
+
+                <div class="ss-drawer__divider"></div>
+
+                <a href="#" class="ss-drawer__link">Trending Products</a>
+                <a href="#" class="ss-drawer__link">Almost Finished (SALE)</a>
+                <a href="#" class="ss-drawer__link">Order Tracking</a>
+            </div>
+        </aside>
+
+
+        <!-- ================== Categories + Hero Section Start ================== -->
+        <section class="ss2-section">
+            <div class="ss-container">
+                <div class="ss2-catsWrap">
+                    <div class="ss2-cats" id="ss2Cats">
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-fruits.png"
+                                alt="ShopStore Fruits & Vegetables category icon with fresh produce basket" />
+                            <span>Fruits & Vegetables</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-baby.png"
+                                alt="ShopStore Baby & Pregnancy category icon with baby care essentials" />
+                            <span>Baby & Pregnancy</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-beverages.png"
+                                alt="ShopStore Beverages category icon with juice and bottled drinks" />
+                            <span>Beverages</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-meat.png"
+                                alt="ShopStore Meats & Seafood category icon with fresh fish and seafood" />
+                            <span>Meats & Seafood</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-snacks.png"
+                                alt="ShopStore Biscuits & Snacks category icon with cookies and snack packs" />
+                            <span>Biscuits & Snacks</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-bakery.png"
+                                alt="ShopStore Breads & Bakery category icon with bread and baked goods" />
+                            <span>Breads & Bakery</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-dairy.png"
+                                alt="ShopStore Breakfast & Dairy category icon with milk and dairy items" />
+                            <span>Breakfast & Dairy</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-frozen.png"
+                                alt="ShopStore Frozen Foods category icon with frozen meal products" />
+                            <span>Frozen Foods</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-grocery.png"
+                                alt="ShopStore Grocery & Staples category icon with pantry essentials" />
+                            <span>Grocery & Staples</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-healthcare.png"
+                                alt="ShopStore Healthcare category icon with personal care and wellness products" />
+                            <span>Healthcare</span>
+                        </a>
+
+                        <a href="#" class="ss2-catItem">
+                            <img src="images/cat-household.png"
+                                alt="ShopStore Household Needs category icon with cleaning and home essentials" />
+                            <span>Household Needs</span>
+                        </a>
+                    </div>
+
+                    <!-- Fade edges -->
+                    <div class="ss2-fade ss2-fade--left"></div>
+                    <div class="ss2-fade ss2-fade--right"></div>
+                </div>
+
+                <!-- Promo Banners -->
+                <div class="ss2-promoGrid">
+
+                    <!-- Left -->
+                    <div class="ss2-promoCard ss2-promoCard--yellow">
+                        <div class="ss2-promoContent">
+                            <span class="ss2-pill">Only This Week</span>
+
+                            <h2 class="ss2-title">
+                                Your everyday supermarket
+                                for fresh essentials
+                                at better prices
+                            </h2>
+
+                            <p class="ss2-desc">
+                                ShopStore brings you weekly deals on groceries, snacks, and daily essentials.
+                                Grab the best offers before they're gone...
+                            </p>
+
+                            <a href="#" class="ss2-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="ss2-promoCard ss2-promoCard--purple">
+                        <div class="ss2-promoContent">
+                            <span class="ss2-pill">Only This Week</span>
+
+                            <h2 class="ss2-title">
+                                Discover top brands
+                                and everyday favorites
+                                all in one place
+                            </h2>
+
+                            <p class="ss2-desc">
+                                Enjoy limited-time ShopStore discounts across popular grocery categories.
+                                Don't miss these savings...
+                            </p>
+
+                            <a href="#" class="ss2-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== Categories + Hero Section End ================== -->
+
+
+
+        <!-- ================== Editor's Pick Section Start ================== -->
+        <section class="ep3-section">
+            <div class="ss-container">
+                <div class="ep3-head">
+                    <div class="ep3-headLeft">
+                        <h2 class="ep3-title">Editor’s Pick</h2>
+                        <p class="ep3-subtitle">Some of the new products arriving this week</p>
+                    </div>
+        
+                    <a href="#" class="ep3-viewAll">
+                        <span>View All</span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+        
+                <div class="ep3-grid">
+                    <!-- 1) BIG LEFT -->
+                    <article class="ep3-card ep3-card--big ep3-card--tall">
+                        <div class="ep3-top">
+                            <span class="ep3-badge ep3-badge--red">75%</span>
+                            <button class="ep3-wish" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-bigMedia">
+                            <img src="images/p1-apple.png" alt="100 Percent Apple Juice 64 fl oz bottle product image" />
+                        </div>
+        
+                        <div class="ep3-chipRow">
+                            <span class="ep3-chip ep3-chip--organic">
+                                <img src="images/organic-icon.png"
+                                    alt="Organic badge icon for 100 Percent Apple Juice product card" />
+                                ORGANIC
+                            </span>
+        
+                            <button class="ep3-fab" aria-label="Quick add">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-info">
+                            <div class="ep3-rating" aria-label="Rating 5 out of 5">
+                                <span class="ep3-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </span>
+                                <span class="ep3-rateNum">5</span>
+                            </div>
+        
+                            <h3 class="ep3-name">100 Percent Apple Juice – 64 fl oz Bottle</h3>
+        
+                            <p class="ep3-desc">
+                                Limited-time deal on ShopStore favorites—stock is running low.
+                            </p>
+        
+                            <div class="ep3-priceRow">
+                                <span class="ep3-price">$0.50</span>
+                                <span class="ep3-old">$1.99</span>
+                            </div>
+        
+                            <div class="ep3-hr"></div>
+        
+                            <p class="ep3-note">This product is about to run out</p>
+        
+                            <div class="ep3-stockBar">
+                                <span class="ep3-stockFill" style="width: 92%"></span>
+                            </div>
+        
+                            <div class="ep3-available">
+                                <span>available only:</span>
+                                <strong>88</strong>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- 2) SMALL (TOP COL-2) -->
+                    <article class="ep3-card ep3-card--small">
+                        <div class="ep3-top">
+                            <span class="ep3-badge ep3-badge--red">11%</span>
+                            <button class="ep3-wish" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-smRow">
+                            <div class="ep3-smMedia">
+                                <img src="images/p2-rising.png"
+                                    alt="Great Value Rising Crust Frozen Pizza Supreme product image" />
+                            </div>
+        
+                            <div class="ep3-smInfo">
+                                <h3 class="ep3-name ep3-name--sm">Great Value Rising Crust Frozen Pizza, Supreme</h3>
+        
+                                <div class="ep3-rating" aria-label="Rating 4 out of 5">
+                                    <span class="ep3-stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </span>
+                                    <span class="ep3-rateNum">4</span>
+                                </div>
+        
+                                <div class="ep3-priceRow ep3-priceRow--sm">
+                                    <span class="ep3-price ep3-price--sm">$8.99</span>
+                                    <span class="ep3-old">$9.99</span>
+                                </div>
+        
+                                <button class="ep3-cartBtn" type="button">
+                                    <span>Add to cart</span>
+                                    <span class="ep3-cartPlus">+</span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="ep3-bottom">
+                            <span class="ep3-chip ep3-chip--cold">
+                                <ion-icon name="snow-outline"></ion-icon>
+                                COLD SALE
+                            </span>
+        
+                            <div class="ep3-timer" data-end="2026-12-31T23:59:59Z">
+                                <span class="ep3-tbox" data-t="h">00</span>
+                                <span class="ep3-tbox" data-t="m">00</span>
+                                <span class="ep3-colon">:</span>
+                                <span class="ep3-tbox" data-t="s">00</span>
+                            </div>
+        
+                            <span class="ep3-ends">Remains until the end of the offer</span>
+                        </div>
+                    </article>
+        
+                    <!-- 3) BIG (TOP COL-3) -->
+                    <article class="ep3-card ep3-card--big ep3-card--tall">
+                        <div class="ep3-top">
+                            <span class="ep3-badge ep3-badge--red">21%</span>
+                            <button class="ep3-wish" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-bigMedia">
+                            <img src="images/p3-pizza.png"
+                                alt="California Pizza Kitchen Margherita Crispy Thin Crust product image" />
+                        </div>
+        
+                        <div class="ep3-chipRow">
+                            <span class="ep3-chip ep3-chip--cold">
+                                <ion-icon name="snow-outline"></ion-icon>
+                                COLD SALE
+                            </span>
+        
+                            <button class="ep3-fab" aria-label="Quick add">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-info">
+                            <div class="ep3-rating" aria-label="Rating 4 out of 5">
+                                <span class="ep3-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ep3-rateNum">4</span>
+                            </div>
+        
+                            <h3 class="ep3-name">California Pizza Kitchen Margherita, Crispy Thin Crust</h3>
+        
+                            <p class="ep3-desc">
+                                Fresh deals on popular frozen favorites—limited quantities available.
+                            </p>
+        
+                            <div class="ep3-priceRow">
+                                <span class="ep3-price">$11.77</span>
+                                <span class="ep3-old">$14.77</span>
+                            </div>
+        
+                            <div class="ep3-hr"></div>
+        
+                            <p class="ep3-note">This product is about to run out</p>
+        
+                            <div class="ep3-stockBar">
+                                <span class="ep3-stockFill" style="width: 78%"></span>
+                            </div>
+        
+                            <div class="ep3-available">
+                                <span>available only:</span>
+                                <strong>16</strong>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- 4) SMALL (TOP COL-4) -->
+                    <article class="ep3-card ep3-card--small">
+                        <div class="ep3-top">
+                            <span class="ep3-badge ep3-badge--red">22%</span>
+                            <button class="ep3-wish" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-smRow">
+                            <div class="ep3-smMedia ep3-smMedia--round">
+                                <img src="images/p4-melon.png"
+                                    alt="Cantaloupe Melon Fresh Organic Cut product image with sliced melon" />
+                            </div>
+        
+                            <div class="ep3-smInfo">
+                                <h3 class="ep3-name ep3-name--sm">Cantaloupe Melon Fresh Organic Cut</h3>
+        
+                                <div class="ep3-rating" aria-label="Rating 3.5 out of 5">
+                                    <span class="ep3-stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </span>
+                                    <span class="ep3-rateNum">3.5</span>
+                                </div>
+        
+                                <div class="ep3-priceRow ep3-priceRow--sm">
+                                    <span class="ep3-price ep3-price--sm ep3-price--dark">$1.25 – $1.50</span>
+                                </div>
+        
+                                <button class="ep3-cartBtn" type="button">
+                                    <span>Select options</span>
+                                    <span class="ep3-cartPlus">+</span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="ep3-bottom">
+                            <span class="ep3-chip ep3-chip--organic">
+                                <img src="images/organic-icon.png"
+                                    alt="Organic badge icon for Cantaloupe Melon Fresh Organic Cut product card" />
+                                ORGANIC
+                            </span>
+        
+                            <div class="ep3-timer" data-end="2026-12-31T23:59:59Z">
+                                <span class="ep3-tbox" data-t="h">00</span>
+                                <span class="ep3-tbox" data-t="m">00</span>
+                                <span class="ep3-colon">:</span>
+                                <span class="ep3-tbox" data-t="s">00</span>
+                            </div>
+        
+                            <span class="ep3-ends">Remains until the end of the offer</span>
+                        </div>
+                    </article>
+        
+                    <!-- 5) SMALL (BOTTOM COL-2) -->
+                    <article class="ep3-card ep3-card--small">
+                        <div class="ep3-top">
+                            <span class="ep3-badge ep3-badge--red">41%</span>
+                            <button class="ep3-wish" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-smRow">
+                            <div class="ep3-smMedia">
+                                <img src="images/p5-orange.png"
+                                    alt="Simply Orange Pulp Free Juice 52 fl oz bottle product image" />
+                            </div>
+        
+                            <div class="ep3-smInfo">
+                                <h3 class="ep3-name ep3-name--sm">Simply Orange Pulp Free Juice – 52 fl oz</h3>
+        
+                                <div class="ep3-rating" aria-label="Rating 4.5 out of 5">
+                                    <span class="ep3-stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                    </span>
+                                    <span class="ep3-rateNum">4.5</span>
+                                </div>
+        
+                                <div class="ep3-priceRow ep3-priceRow--sm">
+                                    <span class="ep3-price ep3-price--sm">$2.45</span>
+                                    <span class="ep3-old">$4.13</span>
+                                </div>
+        
+                                <button class="ep3-cartBtn" type="button">
+                                    <span>Add to cart</span>
+                                    <span class="ep3-cartPlus">+</span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="ep3-bottom">
+                            <span class="ep3-chip ep3-chip--spacer"></span>
+        
+                            <div class="ep3-timer" data-end="2026-12-31T23:59:59Z">
+                                <span class="ep3-tbox" data-t="h">00</span>
+                                <span class="ep3-tbox" data-t="m">00</span>
+                                <span class="ep3-colon">:</span>
+                                <span class="ep3-tbox" data-t="s">00</span>
+                            </div>
+        
+                            <span class="ep3-ends">Remains until the end of the offer</span>
+                        </div>
+                    </article>
+        
+                    <!-- 6) SMALL (BOTTOM COL-4) -->
+                    <article class="ep3-card ep3-card--small">
+                        <div class="ep3-top">
+                            <span class="ep3-badge ep3-badge--red">18%</span>
+                            <button class="ep3-wish" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+        
+                        <div class="ep3-smRow">
+                            <div class="ep3-smMedia">
+                                <img src="images/p6-tissue.png" alt="Angel Soft Toilet Paper 9 Mega Rolls pack product image" />
+                            </div>
+        
+                            <div class="ep3-smInfo">
+                                <h3 class="ep3-name ep3-name--sm">Angel Soft Toilet Paper, 9 Mega Rolls</h3>
+        
+                                <div class="ep3-rating" aria-label="Rating 5 out of 5">
+                                    <span class="ep3-stars">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </span>
+                                    <span class="ep3-rateNum">5</span>
+                                </div>
+        
+                                <div class="ep3-priceRow ep3-priceRow--sm">
+                                    <span class="ep3-price ep3-price--sm">$14.12</span>
+                                    <span class="ep3-old">$17.12</span>
+                                </div>
+        
+                                <button class="ep3-cartBtn" type="button">
+                                    <span>Add to cart</span>
+                                    <span class="ep3-cartPlus">+</span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class="ep3-bottom">
+                            <span class="ep3-chip ep3-chip--spacer"></span>
+        
+                            <div class="ep3-timer" data-end="2026-12-31T23:59:59Z">
+                                <span class="ep3-tbox" data-t="h">00</span>
+                                <span class="ep3-tbox" data-t="m">00</span>
+                                <span class="ep3-colon">:</span>
+                                <span class="ep3-tbox" data-t="s">00</span>
+                            </div>
+        
+        
+                            <span class="ep3-ends">Remains until the end of the offer</span>
+                        </div>
+                    </article>
+        
+                </div>
+            </div>
+        </section>
+        <!-- ================== Editor's Pick Section End ================== -->
+
+
+
+        <!-- ================== Get Fresh Food Section Start ================== -->
+        <section class="ss4-section">
+            <div class="ss-container">
+                <div class="ss4-grid">
+                    <!-- Card 1 -->
+                    <article class="ss4-card ss4-card--one">
+                        <div class="ss4-content">
+                            <span class="ss4-pill">Only This Week</span>
+
+                            <h3 class="ss4-title">
+                                Fresh picks to
+                                start your day
+                            </h3>
+
+                            <p class="ss4-desc">Bring home farm-fresh essentials in minutes.</p>
+
+                            <a href="#" class="ss4-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="ss4-card ss4-card--two">
+                        <div class="ss4-content">
+                            <span class="ss4-pill">Only This Week</span>
+
+                            <h3 class="ss4-title">
+                                Make everyday
+                                shopping easier
+                            </h3>
+
+                            <p class="ss4-desc">Quick deals, quick delivery—every single day.</p>
+
+                            <a href="#" class="ss4-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="ss4-card ss4-card--three">
+                        <div class="ss4-content">
+                            <span class="ss4-pill ss4-pill--red">Only This Week</span>
+
+                            <h3 class="ss4-title">
+                                Taste the freshness
+                                in every bite
+                            </h3>
+
+                            <p class="ss4-desc">Limited-time offers—grab them before they’re gone.</p>
+
+                            <a href="#" class="ss4-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== Get Fresh Food Section End ================== -->
+
+
+
+        <!-- ================== Shopping With Us Section Start ================== -->
+        <section class="ss5-section">
+            <div class="ss-container">
+                <div class="ss5-head">
+                    <div class="ss5-headLeft">
+                        <h2 class="ss5-title">Make everyday shopping effortless</h2>
+                        <p class="ss5-subtitle">Don’t miss these limited-time deals through the end of March.</p>
+                    </div>
+
+                    <a href="#" class="ss5-viewAll">
+                        <span>View All</span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <!-- Grid -->
+                <div class="ss5-grid">
+
+                    <!-- Card 1 -->
+                    <article class="ss5-card">
+                        <div class="ss5-top">
+                            <span class="ss5-badge">75%</span>
+                            <button class="ss5-wish" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-media">
+                            <img src="images/p1-apple.png" alt="100 Percent Apple Juice 64 fl oz bottle product image" />
+                        </div>
+
+                        <div class="ss5-metaRow">
+                            <span class="ss5-tag ss5-tag--organic">
+                                <img src="images/organic-icon.png"
+                                    alt="Organic badge icon for 100 Percent Apple Juice product card" />
+                                ORGANIC
+                            </span>
+
+                            <button class="ss5-fab" type="button" aria-label="Add to cart">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-info">
+                            <div class="ss5-rating" aria-label="Rating 4 out of 5">
+                                <span class="ss5-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ss5-rateNum">4</span>
+                            </div>
+
+                            <h3 class="ss5-name">100 Percent Apple Juice – 64 fl oz Bottle</h3>
+
+                            <div class="ss5-priceRow">
+                                <span class="ss5-price">$0.50</span>
+                                <span class="ss5-old">$1.99</span>
+                            </div>
+
+                            <div class="ss5-divider"></div>
+
+                            <p class="ss5-note">This product is about to run out</p>
+
+                            <div class="ss5-bar">
+                                <span class="ss5-fill" style="width:92%"></span>
+                            </div>
+
+                            <div class="ss5-available">
+                                <span>available only:</span>
+                                <strong>88</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="ss5-card">
+                        <div class="ss5-top">
+                            <span class="ss5-badge">22%</span>
+                            <button class="ss5-wish" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-media">
+                            <img src="images/p4-melon.png"
+                                alt="Cantaloupe Melon Fresh Organic Cut product image with sliced melon" />
+                        </div>
+
+                        <div class="ss5-metaRow">
+                            <span class="ss5-tag ss5-tag--organic">
+                                <img src="images/organic-icon.png"
+                                    alt="Organic badge icon for Cantaloupe Melon Fresh Organic Cut product card" />
+                                ORGANIC
+                            </span>
+
+                            <button class="ss5-fab" type="button" aria-label="Add to cart">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-info">
+                            <div class="ss5-rating" aria-label="Rating 5 out of 5">
+                                <span class="ss5-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </span>
+                                <span class="ss5-rateNum">5</span>
+                            </div>
+
+                            <h3 class="ss5-name">Cantaloupe Melon Fresh Organic Cut</h3>
+
+                            <div class="ss5-priceRow">
+                                <span class="ss5-price ss5-price--dark">$1.25 – $1.50</span>
+                            </div>
+
+                            <div class="ss5-divider"></div>
+
+                            <p class="ss5-note">This product is about to run out</p>
+
+                            <div class="ss5-bar">
+                                <span class="ss5-fill" style="width:86%"></span>
+                            </div>
+
+                            <div class="ss5-available">
+                                <span>available only:</span>
+                                <strong>125</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="ss5-card">
+                        <div class="ss5-top">
+                            <span class="ss5-badge">21%</span>
+                            <button class="ss5-wish" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-media">
+                            <img src="images/p-eggs.png"
+                                alt="Vital Farms Pasture-Raised Grade A large eggs 12 count carton product image" />
+                        </div>
+
+                        <div class="ss5-metaRow">
+                            <span class="ss5-tag ss5-tag--plain"></span>
+
+                            <button class="ss5-fab" type="button" aria-label="Add to cart">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-info">
+                            <div class="ss5-rating" aria-label="Rating 4 out of 5">
+                                <span class="ss5-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ss5-rateNum">4</span>
+                            </div>
+
+                            <h3 class="ss5-name">Vital Farms Pasture-Raised Grade A Large Eggs – 12ct</h3>
+
+                            <div class="ss5-priceRow">
+                                <span class="ss5-price">$3.99</span>
+                                <span class="ss5-old">$4.99</span>
+                            </div>
+
+                            <div class="ss5-divider"></div>
+
+                            <p class="ss5-note">This product is about to run out</p>
+
+                            <div class="ss5-bar">
+                                <span class="ss5-fill" style="width:98%"></span>
+                            </div>
+
+                            <div class="ss5-available">
+                                <span>available only:</span>
+                                <strong>1</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="ss5-card">
+                        <div class="ss5-top">
+                            <span class="ss5-badge ss5-badge--ghost">&nbsp;</span>
+                            <button class="ss5-wish" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-media">
+                            <img src="images/p-cheese.png" alt="Tillamook Medium Cheddar Cheese Loaf 32oz product image" />
+                        </div>
+
+                        <div class="ss5-metaRow">
+                            <span class="ss5-tag ss5-tag--plain"></span>
+
+                            <button class="ss5-fab" type="button" aria-label="Add to cart">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-info">
+                            <div class="ss5-rating" aria-label="Rating 4 out of 5">
+                                <span class="ss5-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ss5-rateNum">4</span>
+                            </div>
+
+                            <h3 class="ss5-name">Tillamook Medium Cheddar Cheese Loaf – 32oz</h3>
+
+                            <div class="ss5-priceRow">
+                                <span class="ss5-price ss5-price--dark">$7.99</span>
+                            </div>
+
+                            <div class="ss5-divider"></div>
+
+                            <p class="ss5-note">This product is about to run out</p>
+
+                            <div class="ss5-bar">
+                                <span class="ss5-fill" style="width:90%"></span>
+                            </div>
+
+                            <div class="ss5-available">
+                                <span>available only:</span>
+                                <strong>13</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="ss5-card">
+                        <div class="ss5-top">
+                            <span class="ss5-badge">18%</span>
+                            <button class="ss5-wish" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-media">
+                            <img src="images/p-milk.png" alt="Silk vanilla almond milk 64 fl oz carton product image" />
+                        </div>
+
+                        <div class="ss5-metaRow">
+                            <span class="ss5-tag ss5-tag--plain"></span>
+
+                            <button class="ss5-fab" type="button" aria-label="Add to cart">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-info">
+                            <div class="ss5-rating" aria-label="Rating 4 out of 5">
+                                <span class="ss5-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ss5-rateNum">4</span>
+                            </div>
+
+                            <h3 class="ss5-name">Silk Dairy Free, Gluten Free, Vanilla Almond Milk, 64 fl oz</h3>
+
+                            <div class="ss5-priceRow">
+                                <span class="ss5-price">$4.60</span>
+                                <span class="ss5-old">$5.60</span>
+                            </div>
+
+                            <div class="ss5-divider"></div>
+
+                            <p class="ss5-note">This product is about to run out</p>
+
+                            <div class="ss5-bar">
+                                <span class="ss5-fill" style="width:88%"></span>
+                            </div>
+
+                            <div class="ss5-available">
+                                <span>available only:</span>
+                                <strong>9</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="ss5-card">
+                        <div class="ss5-top">
+                            <span class="ss5-badge">17%</span>
+                            <button class="ss5-wish" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-media">
+                            <img src="images/p-protein.png"
+                                alt="Evolve plant-powered protein shake double chocolate pack product image" />
+                        </div>
+
+                        <div class="ss5-metaRow">
+                            <span class="ss5-tag ss5-tag--plain"></span>
+
+                            <button class="ss5-fab" type="button" aria-label="Add to cart">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss5-info">
+                            <div class="ss5-rating" aria-label="Rating 3 out of 5">
+                                <span class="ss5-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ss5-rateNum">3</span>
+                            </div>
+
+                            <h3 class="ss5-name">Evolve Plant-Powered Protein Shake – Double Chocolate</h3>
+
+                            <div class="ss5-priceRow">
+                                <span class="ss5-price">$14.89</span>
+                                <span class="ss5-old">$17.89</span>
+                            </div>
+
+                            <div class="ss5-divider"></div>
+
+                            <p class="ss5-note">This product is about to run out</p>
+
+                            <div class="ss5-bar">
+                                <span class="ss5-fill" style="width:84%"></span>
+                            </div>
+
+                            <div class="ss5-available">
+                                <span>available only:</span>
+                                <strong>33</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== Shopping With Us Section End ================== -->
+
+
+
+        <!-- ================== This Week Section Start ================== -->
+        <section class="ss6-section">
+            <div class="ss-container">
+
+                <div class="ss6-grid">
+                    <!-- Left Card -->
+                    <article class="ss6-card ss6-card--left" aria-label="Eggs promo banner">
+                        <div class="ss6-content">
+                            <span class="ss6-pill">Only This Week</span>
+
+                            <h3 class="ss6-title">
+                                Stock up on<br />
+                                farm-fresh essentials
+                            </h3>
+
+                            <p class="ss6-desc">Quality you can taste, prices you’ll love.</p>
+
+                            <a href="#" class="ss6-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Right Card -->
+                    <article class="ss6-card ss6-card--right" aria-label="Momos promo banner">
+                        <div class="ss6-content">
+                            <span class="ss6-pill">Only This Week</span>
+
+                            <h3 class="ss6-title">
+                                Discover delicious<br />
+                                ready-to-cook favorites
+                            </h3>
+
+                            <p class="ss6-desc">Limited-time deals—grab them before they’re gone.</p>
+
+                            <a href="#" class="ss6-btn">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== This Week Section End ================== -->
+
+
+
+        <!-- ================== Best Sellers Section Start ================== -->
+        <section class="ss7-section">
+            <div class="ss-container">
+                <div class="ss7-head">
+                    <div class="ss7-headLeft">
+                        <h2 class="ss7-title">BEST SELLERS</h2>
+                        <p class="ss7-subtitle">Don't miss this opportunity at a special discount just for this week.</p>
+                    </div>
+
+                    <a href="#" class="ss7-viewAll">
+                        <span>View All</span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <!-- Grid -->
+                <div class="ss7-grid">
+
+                    <!-- Left Column (3 compact) -->
+                    <div class="ss7-col">
+                        <!-- item -->
+                        <article class="ss7-mini">
+                            <div class="ss7-miniTop">
+                                <span class="ss7-badge">75%</span>
+
+                                <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss7-miniRow">
+                                <div class="ss7-miniMedia">
+                                    <img src="images/p1-apple.png"
+                                        alt="100 Percent Apple Juice 64 fl oz Bottle best seller product image" />
+                                </div>
+
+                                <div class="ss7-miniInfo">
+                                    <h3 class="ss7-name">100 Percent Apple Juice – 64 fl oz Bottle</h3>
+
+                                    <div class="ss7-rating">
+                                        <span class="ss7-stars">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </span>
+                                        <span class="ss7-rateNum">4</span>
+                                    </div>
+
+                                    <div class="ss7-priceRow">
+                                        <span class="ss7-price">$0.50</span>
+                                        <span class="ss7-old">$1.99</span>
+                                    </div>
+
+                                    <button class="ss7-cartBtn js-addcart" type="button">
+                                        <span>Add to cart</span>
+                                        <span class="ss7-plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ss7-miniBottom">
+                                <span class="ss7-chip ss7-chip--organic">
+                                    <img src="images/organic-icon.png"
+                                        alt="Organic badge icon for apple juice best seller item" />
+                                    ORGANIC
+                                </span>
+
+                                <div class="ss7-dots" aria-hidden="true">
+                                    <span class="ss7-dot ss7-dot--active"></span>
+                                    <span class="ss7-dot"></span>
+                                </div>
+
+                                <div class="ep3-timer ss7-timer" data-end="2026-12-31T23:59:59Z">
+                                    <span class="ep3-tbox" data-t="h">00</span>
+                                    <span class="ep3-tbox" data-t="m">00</span>
+                                    <span class="ep3-colon">:</span>
+                                    <span class="ep3-tbox" data-t="s">00</span>
+                                </div>
+
+                                <span class="ss7-ends">Remains until the end of the offer</span>
+                            </div>
+                        </article>
+
+                        <!-- item -->
+                        <article class="ss7-mini">
+                            <div class="ss7-miniTop">
+                                <span class="ss7-badge">41%</span>
+                                <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss7-miniRow">
+                                <div class="ss7-miniMedia">
+                                    <img src="images/p5-orange.png"
+                                        alt="Simply Orange Pulp Free Juice 52 fl oz best seller product image" />
+                                </div>
+
+                                <div class="ss7-miniInfo">
+                                    <h3 class="ss7-name">Simply Orange Pulp Free Juice – 52 fl oz</h3>
+
+                                    <div class="ss7-rating">
+                                        <span class="ss7-stars">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </span>
+                                        <span class="ss7-rateNum">4</span>
+                                    </div>
+
+                                    <div class="ss7-priceRow">
+                                        <span class="ss7-price">$2.45</span>
+                                        <span class="ss7-old">$4.13</span>
+                                    </div>
+
+                                    <button class="ss7-cartBtn js-addcart" type="button">
+                                        <span>Add to cart</span>
+                                        <span class="ss7-plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ss7-miniBottom">
+                                <span class="ss7-chip ss7-chip--spacer"></span>
+
+                                <div class="ep3-timer ss7-timer" data-end="2026-12-31T23:59:59Z">
+                                    <span class="ep3-tbox" data-t="h">00</span>
+                                    <span class="ep3-tbox" data-t="m">00</span>
+                                    <span class="ep3-colon">:</span>
+                                    <span class="ep3-tbox" data-t="s">00</span>
+                                </div>
+
+                                <span class="ss7-ends">Remains until the end of the offer</span>
+                            </div>
+                        </article>
+
+                        <!-- item -->
+                        <article class="ss7-mini">
+                            <div class="ss7-miniTop">
+                                <span class="ss7-badge">45%</span>
+                                <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss7-miniRow">
+                                <div class="ss7-miniMedia">
+                                    <img src="images/p-water.png"
+                                        alt="Vitaminwater Zero Sugar Squeezed Electrolyte Drink 16.9 fl oz 6 pack best seller product image" />
+                                </div>
+
+                                <div class="ss7-miniInfo">
+                                    <h3 class="ss7-name">Vitaminwater Zero Sugar Squeezed Electrolyte Drink – 16.9 fl oz, 6 Pack
+                                    </h3>
+
+                                    <div class="ss7-rating">
+                                        <span class="ss7-stars">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </span>
+                                        <span class="ss7-rateNum">4</span>
+                                    </div>
+
+                                    <div class="ss7-priceRow">
+                                        <span class="ss7-price">$4.99</span>
+                                        <span class="ss7-old">$8.99</span>
+                                    </div>
+
+                                    <button class="ss7-cartBtn js-addcart" type="button">
+                                        <span>Add to cart</span>
+                                        <span class="ss7-plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ss7-miniBottom">
+                                <span class="ss7-chip ss7-chip--spacer"></span>
+
+                                <div class="ep3-timer ss7-timer" data-end="2026-12-31T23:59:59Z">
+                                    <span class="ep3-tbox" data-t="h">00</span>
+                                    <span class="ep3-tbox" data-t="m">00</span>
+                                    <span class="ep3-colon">:</span>
+                                    <span class="ep3-tbox" data-t="s">00</span>
+                                </div>
+
+                                <span class="ss7-ends">Remains until the end of the offer</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Center Featured Big -->
+                    <article class="ss7-feature">
+                        <div class="ss7-featureTop">
+                            <span class="ss7-badge">31%</span>
+
+                            <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="ss7-featureMedia">
+                            <img src="images/p7-paloma.png"
+                                alt="Absolut Grapefruit Paloma Sparkling Vodka Cocktail 4 pack 355ml featured product image" />
+                        </div>
+
+                        <div class="ss7-featureInfo">
+                            <div class="ss7-rating">
+                                <span class="ss7-stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </span>
+                                <span class="ss7-rateNum">4</span>
+                            </div>
+                            <span class="ep3-chip ep3-chip--cold">
+                                <ion-icon name="snow-outline"></ion-icon>
+                                COLD SALE
+                            </span>
+                            <h3 class="ss7-featureName">
+                                Absolut Grapefruit Paloma Sparkling Vodka Cocktail – 4pk, 355ml
+                            </h3>
+                            
+                            <div class="ss7-priceRow ss7-priceRow--big">
+                                <span class="ss7-price ss7-price--big">$6.99</span>
+                                <span class="ss7-old">$9.99</span>
+                            </div>
+
+                            <p class="ss7-featureDesc">
+                                A crisp, refreshing grapefruit sparkling cocktail with a bright citrus finish—perfect chilled
+                                and ready to enjoy.
+                                Limited stock available while this weekly offer lasts.
+                            </p>
+
+                            <div class="ss7-divider"></div>
+
+                            <p class="ss7-note">This product is about to run out</p>
+
+                            <div class="ss7-bar">
+                                <span class="ss7-fill" style="width:78%"></span>
+                            </div>
+
+                            <div class="ss7-available">
+                                <span>available only:</span>
+                                <strong>38</strong>
+                            </div>
+
+                            <button class="ss7-greenBtn js-addcart" type="button">
+                                <ion-icon name="bag-outline"></ion-icon>
+                                <span>Add to cart</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Right Column (3 compact) -->
+                    <div class="ss7-col">
+                        <article class="ss7-mini">
+                            <div class="ss7-miniTop">
+                                <span class="ss7-badge">17%</span>
+                                <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss7-miniRow">
+                                <div class="ss7-miniMedia">
+                                    <img src="images/p-protein.png"
+                                        alt="Evolve Real Plant-Powered Protein Shake Double Chocolate best seller product image" />
+                                </div>
+
+                                <div class="ss7-miniInfo">
+                                    <h3 class="ss7-name">Evolve Real Plant-Powered Protein Shake – Double Chocolate</h3>
+
+                                    <div class="ss7-rating">
+                                        <span class="ss7-stars">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </span>
+                                        <span class="ss7-rateNum">4</span>
+                                    </div>
+
+                                    <div class="ss7-priceRow">
+                                        <span class="ss7-price">$14.89</span>
+                                        <span class="ss7-old">$17.89</span>
+                                    </div>
+
+                                    <button class="ss7-cartBtn js-addcart" type="button">
+                                        <span>Add to cart</span>
+                                        <span class="ss7-plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ss7-miniBottom">
+                                <span class="ss7-chip ss7-chip--spacer"></span>
+
+                                <div class="ep3-timer ss7-timer" data-end="2026-12-31T23:59:59Z">
+                                    <span class="ep3-tbox" data-t="h">00</span>
+                                    <span class="ep3-tbox" data-t="m">00</span>
+                                    <span class="ep3-colon">:</span>
+                                    <span class="ep3-tbox" data-t="s">00</span>
+                                </div>
+
+                                <span class="ss7-ends">Remains until the end of the offer</span>
+                            </div>
+                        </article>
+
+                        <article class="ss7-mini">
+                            <div class="ss7-miniTop">
+                                <span class="ss7-badge">31%</span>
+                                <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss7-miniRow">
+                                <div class="ss7-miniMedia">
+                                    <img src="images/p7-paloma-07.png"
+                                        alt="Absolut Grapefruit Paloma Sparkling Vodka Cocktail mini best seller product image" />
+                                </div>
+
+                                <div class="ss7-miniInfo">
+                                    <h3 class="ss7-name">Absolut Grapefruit Paloma Sparkling Vodka Cocktail</h3>
+
+                                    <div class="ss7-rating">
+                                        <span class="ss7-stars">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </span>
+                                        <span class="ss7-rateNum">4</span>
+                                    </div>
+
+                                    <div class="ss7-priceRow">
+                                        <span class="ss7-price">$6.99</span>
+                                        <span class="ss7-old">$9.99</span>
+                                    </div>
+
+                                    <button class="ss7-cartBtn js-addcart" type="button">
+                                        <span>Add to cart</span>
+                                        <span class="ss7-plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ss7-miniBottom">
+                                <span class="ss7-chip ss7-chip--organic">
+                                    <img src="images/organic-icon.png"
+                                        alt="Organic badge icon for paloma cocktail mini best seller item" />
+                                    ORGANIC
+                                </span>
+
+                                <div class="ss7-dots" aria-hidden="true">
+                                    <span class="ss7-dot ss7-dot--active"></span>
+                                    <span class="ss7-dot"></span>
+                                </div>
+
+                                <div class="ep3-timer ss7-timer" data-end="2026-12-31T23:59:59Z">
+                                    <span class="ep3-tbox" data-t="h">00</span>
+                                    <span class="ep3-tbox" data-t="m">00</span>
+                                    <span class="ep3-colon">:</span>
+                                    <span class="ep3-tbox" data-t="s">00</span>
+                                </div>
+
+                                <span class="ss7-ends">Remains until the end of the offer</span>
+                            </div>
+                        </article>
+
+                        <article class="ss7-mini">
+                            <div class="ss7-miniTop">
+                                <span class="ss7-badge">45%</span>
+                                <button class="ss7-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss7-miniRow">
+                                <div class="ss7-miniMedia">
+                                    <img src="images/p8-paloma-08.png"
+                                        alt="Vitaminwater Zero Sugar Squeezed Electrolyte Drink single bottle best seller product image" />
+                                </div>
+
+                                <div class="ss7-miniInfo">
+                                    <h3 class="ss7-name">vitaminwater® zero sugar squeezed electrolyte drink (sugar-free)</h3>
+
+                                    <div class="ss7-rating">
+                                        <span class="ss7-stars">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </span>
+                                        <span class="ss7-rateNum">3</span>
+                                    </div>
+
+                                    <div class="ss7-priceRow">
+                                        <span class="ss7-price">$4.99</span>
+                                        <span class="ss7-old">$8.99</span>
+                                    </div>
+
+                                    <button class="ss7-cartBtn js-addcart" type="button">
+                                        <span>Add to cart</span>
+                                        <span class="ss7-plus">+</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ss7-miniBottom">
+                            
+                                <div class="ep3-timer ss7-timer" data-end="2026-12-31T23:59:59Z">
+                                    <span class="ep3-tbox" data-t="h">00</span>
+                                    <span class="ep3-tbox" data-t="m">00</span>
+                                    <span class="ep3-colon">:</span>
+                                    <span class="ep3-tbox" data-t="s">00</span>
+                                    <span class="ss7-ends">Remains until the end of the offer</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== Best Sellers Section Start ================== -->
+
+
+
+        <!-- ========== Wide Promo Section Start ========== -->
+        <section class="ss8-section">
+            <div class="ss-container">
+
+                <div class="ss8-grid">
+                    <!-- Left (Pink) -->
+                    <article class="ss8-card ss8-card--pink" aria-label="Pocket friendly promo">
+                        <div class="ss8-content">
+                            <span class="ss8-pill">Only This Week</span>
+
+                            <h3 class="ss8-title">
+                                Big savings on<br />
+                                everyday best-sellers
+                            </h3>
+
+                            <p class="ss8-desc">Stock up now—limited-time weekly deals.</p>
+
+                            <a class="ss8-btn" href="#">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Right (Yellow) -->
+                    <article class="ss8-card ss8-card--yellow" aria-label="Customer priority promo">
+                        <div class="ss8-content">
+                            <span class="ss8-pill">Only This Week</span>
+
+                            <h3 class="ss8-title">
+                                Fresh picks with<br />
+                                fast, reliable delivery
+                            </h3>
+
+                            <p class="ss8-desc">Quality products, curated for your daily needs.</p>
+
+                            <a class="ss8-btn" href="#">
+                                <span>Shop Now</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== Wide Promo Section End ========== -->
+
+
+
+        <!-- ========== Product Grid Section Start ========== -->
+        <section class="ss9-section">
+            <div class="ss-container">
+
+                <div class="ss9-wrap">
+                    <div class="ss9-grid">
+
+                        <!-- Card 1 -->
+                        <article class="ss9-card">
+                            <div class="ss9-top">
+                                <span class="ss9-badge">11%</span>
+                                <button class="ss9-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-media">
+                                <img src="images/p2-rising.png" alt="Great Value Rising Crust Frozen Pizza Supreme box" />
+                            </div>
+
+                            <div class="ss9-chipRow">
+                                <span class="ss9-chip ss9-chip--cold">
+                                    <ion-icon name="snow-outline"></ion-icon>
+                                    COLD SALE
+                                </span>
+
+                                <button class="ss9-fab js-addcart" type="button" aria-label="Quick add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-info">
+                                <div class="ss9-rating">
+                                    <span class="ss9-stars" aria-label="Rating 4.5 out of 5">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                    </span>
+                                    <span class="ss9-rateNum">4.5</span>
+                                </div>
+
+                                <h3 class="ss9-name">Great Value Rising Crust Frozen Pizza, Supreme</h3>
+
+                                <div class="ss9-priceRow">
+                                    <span class="ss9-price">$8.99</span>
+                                    <span class="ss9-old">$9.99</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="ss9-card">
+                            <div class="ss9-top">
+                                <span class="ss9-badge">13%</span>
+                                <button class="ss9-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-media">
+                                <img src="images/p-straw.png" alt="Simple Kitchen FD sliced strawberries pack 1.08 lb" />
+                            </div>
+
+                            <div class="ss9-chipRow">
+                                <span class="ss9-chip ss9-chip--spacer"></span>
+
+                                <button class="ss9-fab js-addcart" type="button" aria-label="Quick add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-info">
+                                <div class="ss9-rating">
+                                    <span class="ss9-stars" aria-label="Rating 3 out of 5">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </span>
+                                    <span class="ss9-rateNum">3</span>
+                                </div>
+
+                                <h3 class="ss9-name">Simple Kitchen FD Sliced Strawberries – 1.08lb</h3>
+
+                                <div class="ss9-priceRow">
+                                    <span class="ss9-price">$21.90</span>
+                                    <span class="ss9-old">$24.90</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="ss9-card">
+                            <div class="ss9-top">
+                                <span class="ss9-badge">26%</span>
+                                <button class="ss9-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-media">
+                                <img src="images/p-pepperoni-2.png" alt="Red Baron fully loaded hand tossed frozen pizza box" />
+                            </div>
+
+                            <div class="ss9-chipRow">
+                                <span class="ss9-chip ss9-chip--spacer"></span>
+
+                                <button class="ss9-fab js-addcart" type="button" aria-label="Quick add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-info">
+                                <div class="ss9-rating">
+                                    <span class="ss9-stars" aria-label="Rating 5 out of 5">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </span>
+                                    <span class="ss9-rateNum">5</span>
+                                </div>
+
+                                <h3 class="ss9-name">Red Baron Frozen Hand Tossed Ultimate Pepperoni Pizza</h3>
+
+                                <div class="ss9-priceRow">
+                                    <span class="ss9-price">$14.99</span>
+                                    <span class="ss9-old">$19.99</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 4 -->
+                        <article class="ss9-card">
+                            <div class="ss9-top">
+                                <span class="ss9-badge">8%</span>
+                                <button class="ss9-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-media">
+                                <img src="images/p-scram.png" alt="Oscar Mayer Ham & Swiss Melt Scrambler cup 3 oz" />
+                            </div>
+
+                            <div class="ss9-chipRow">
+                                <span class="ss9-chip ss9-chip--spacer"></span>
+
+                                <button class="ss9-fab js-addcart" type="button" aria-label="Quick add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-info">
+                                <div class="ss9-rating">
+                                    <span class="ss9-stars" aria-label="Rating 3.5 out of 5">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </span>
+                                    <span class="ss9-rateNum">3.5</span>
+                                </div>
+
+                                <h3 class="ss9-name">Oscar Mayer Ham & Swiss Melt Scrambler – 3oz</h3>
+
+                                <div class="ss9-priceRow">
+                                    <span class="ss9-price">$11.90</span>
+                                    <span class="ss9-old">$12.90</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 5 -->
+                        <article class="ss9-card">
+                            <div class="ss9-top">
+                                <span class="ss9-badge">16%</span>
+                                <button class="ss9-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-media">
+                                <img src="images/p2-rising2.png" alt="Spinach and herb wrap tortillas pack" />
+                            </div>
+
+                            <div class="ss9-chipRow">
+                                <span class="ss9-chip ss9-chip--spacer"></span>
+
+                                <button class="ss9-fab js-addcart" type="button" aria-label="Quick add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-info">
+                                <div class="ss9-rating">
+                                    <span class="ss9-stars" aria-label="Rating 5 out of 5">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </span>
+                                    <span class="ss9-rateNum">5</span>
+                                </div>
+
+                                <h3 class="ss9-name">Large Garden Spinach & Herb Wrap Tortillas – 6ct</h3>
+
+                                <div class="ss9-priceRow">
+                                    <span class="ss9-price">$27.90</span>
+                                    <span class="ss9-old">$32.90</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 6 -->
+                        <article class="ss9-card">
+                            <div class="ss9-top">
+                                <span class="ss9-badge">14%</span>
+                                <button class="ss9-wish js-wishlist" type="button" aria-label="Wishlist">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-media">
+                                <img src="images/p-pepperoni.png" alt="Great Value Rising Crust cheese pizza box 27.4 oz" />
+                            </div>
+
+                            <div class="ss9-chipRow">
+                                <span class="ss9-chip ss9-chip--spacer"></span>
+
+                                <button class="ss9-fab js-addcart" type="button" aria-label="Quick add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <div class="ss9-info">
+                                <div class="ss9-rating">
+                                    <span class="ss9-stars" aria-label="Rating 4.5 out of 5">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half-outline"></ion-icon>
+                                    </span>
+                                    <span class="ss9-rateNum">4.5</span>
+                                </div>
+
+                                <h3 class="ss9-name">Great Value Rising Crust Pizza, Cheese, 27.4 oz</h3>
+
+                                <div class="ss9-priceRow">
+                                    <span class="ss9-price">$12.89</span>
+                                    <span class="ss9-old">$14.89</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== Product Grid Section End ========== -->
+
+
+
+        <!-- ========== Features Section Start ========== -->
+        <section class="ss10-section">
+            <div class="ss-container">
+                <div class="ss10-grid">
+        
+                    <!-- 1 -->
+                    <div class="ss10-item">
+                        <div class="ss10-icon">
+                            <img src="images/feat-payment.png" alt="Secure online payment icon" />
+                        </div>
+                        <div class="ss10-text">
+                            <h3 class="ss10-title">Secure online payments</h3>
+                            <p class="ss10-desc">Pay safely in seconds with trusted payment options and encrypted checkout.</p>
+                        </div>
+                    </div>
+        
+                    <!-- 2 -->
+                    <div class="ss10-item">
+                        <div class="ss10-icon">
+                            <img src="images/feat-stock.png" alt="Fresh deals and new arrivals icon" />
+                        </div>
+                        <div class="ss10-text">
+                            <h3 class="ss10-title">New arrivals & weekly deals</h3>
+                            <p class="ss10-desc">Discover fresh drops and limited-time savings updated throughout the week.</p>
+                        </div>
+                    </div>
+        
+                    <!-- 3 -->
+                    <div class="ss10-item">
+                        <div class="ss10-icon">
+                            <img src="images/feat-quality.png" alt="Quality guarantee icon" />
+                        </div>
+                        <div class="ss10-text">
+                            <h3 class="ss10-title">Quality guaranteed</h3>
+                            <p class="ss10-desc">Carefully selected items with freshness checks so you shop with confidence.</p>
+                        </div>
+                    </div>
+        
+                    <!-- 4 -->
+                    <div class="ss10-item">
+                        <div class="ss10-icon">
+                            <img src="images/feat-delivery.png" alt="Fast delivery icon" />
+                        </div>
+                        <div class="ss10-text">
+                            <h3 class="ss10-title">Fast delivery from 1 hour</h3>
+                            <p class="ss10-desc">Need it quickly? Get essentials delivered fast with real-time order tracking.
+                            </p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <!-- ========== Features Section End ========== -->
+
+
+
+        <!-- ========== Footer Section Start ========== -->
+        <footer class="ssf-footer" role="contentinfo">
+            <div class="ss-container">
+        
+                <!-- Top: Newsletter -->
+                <div class="ssf-news">
+                    <div class="ssf-newsLeft">
+                        <h3 class="ssf-newsTitle">Join our newsletter & get £10 off</h3>
+                        <p class="ssf-newsDesc">
+                            Subscribe for weekly deals, new arrivals, and exclusive coupons.<br />
+                            No spam — just the good stuff.
+                        </p>
+                    </div>
+        
+                    <div class="ssf-newsRight">
+                        <form class="ssf-form" id="ssfSubscribeForm" novalidate>
+                            <div class="ssf-inputWrap">
+                                <ion-icon class="ssf-mailIcon" name="mail-outline" aria-hidden="true"></ion-icon>
+                                <input type="email" class="ssf-input" id="ssfEmail" placeholder="Enter your email address"
+                                    autocomplete="email" required aria-label="Email address" />
+                            </div>
+                            <button class="ssf-send" type="submit">SEND</button>
+                        </form>
+        
+                        <p class="ssf-terms">
+                            By subscribing you agree to our
+                            <a href="#">Terms &amp; Conditions</a> and
+                            <a href="#">Privacy &amp; Cookies Policy.</a>
+                        </p>
+        
+                        <p class="ssf-msg" id="ssfMsg" aria-live="polite"></p>
+                    </div>
+                </div>
+        
+                <div class="ssf-divider"></div>
+        
+                <!-- Middle: Links -->
+                <div class="ssf-grid">
+        
+                    <!-- Help -->
+                    <div class="ssf-col ssf-help">
+                        <h4 class="ssf-h">Need Help?</h4>
+                        <p class="ssf-p">
+                            Questions about delivery, returns, or your account? Our support team is here to help you quickly and
+                            kindly.
+                        </p>
+        
+                        <div class="ssf-contact">
+                            <div class="ssf-contactRow">
+                                <span class="ssf-ico" aria-hidden="true"><ion-icon name="call-outline"></ion-icon></span>
+                                <div class="ssf-contactTxt">
+                                    <span class="ssf-small">Monday–Friday: 08am–9pm</span>
+                                    <a class="ssf-big" href="tel:0800300353">0 800 300-353</a>
+                                </div>
+                            </div>
+        
+                            <div class="ssf-contactRow">
+                                <span class="ssf-ico" aria-hidden="true"><ion-icon name="mail-outline"></ion-icon></span>
+                                <div class="ssf-contactTxt">
+                                    <span class="ssf-small">Need help with your order?</span>
+                                    <a class="ssf-mail" href="mailto:support@shopstoredemo.com">support@shopstoredemo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Make money -->
+                    <div class="ssf-col">
+                        <h4 class="ssf-h">Sell with ShopStore</h4>
+                        <ul class="ssf-links">
+                            <li><a href="#">Become a Seller</a></li>
+                            <li><a href="#">Sell Your Services</a></li>
+                            <li><a href="#">ShopStore Business</a></li>
+                            <li><a href="#">Sell Your App</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Advertise with Us</a></li>
+                            <li><a href="#">Publish with ShopStore</a></li>
+                            <li><a href="#">Vendor Partnership</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Let us help -->
+                    <div class="ssf-col">
+                        <h4 class="ssf-h">Customer Service</h4>
+                        <ul class="ssf-links">
+                            <li><a href="#">Accessibility Statement</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Returns &amp; Replacements</a></li>
+                            <li><a href="#">Shipping Rates &amp; Policies</a></li>
+                            <li><a href="#">Refund &amp; Returns Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Cookie Settings</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Know us -->
+                    <div class="ssf-col">
+                        <h4 class="ssf-h">About ShopStore</h4>
+                        <ul class="ssf-links">
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">ShopStore Devices</a></li>
+                            <li><a href="#">Customer Reviews</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Store Locations</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- App + Social -->
+                    <div class="ssf-col ssf-app">
+                        <h4 class="ssf-h">Download our app</h4>
+        
+                        <div class="ssf-appRow">
+                            <div class="ssf-badges">
+                                <a class="ssf-badge" href="#" aria-label="Get it on Google Play">
+                                    <img src="images/google-play.png" alt="Get it on Google Play badge" />
+                                </a>
+                                <a class="ssf-badge" href="#" aria-label="Download on the App Store">
+                                    <img src="images/app-store.png" alt="Download on the App Store badge" />
+                                </a>
+                            </div>
+        
+                            <div class="ssf-appNotes">
+                                <p class="ssf-note">Download the app<br /><span>Get -10% off</span></p>
+                                <p class="ssf-note">Member-only deals<br /><span>Save up to -20%</span></p>
+                            </div>
+                        </div>
+        
+                        <div class="ssf-social">
+                            <p class="ssf-socialT">Follow us on social media:</p>
+                            <div class="ssf-socialRow">
+                                <a class="ssf-socialBtn" href="#" aria-label="Facebook"><ion-icon
+                                        name="logo-facebook"></ion-icon></a>
+                                <a class="ssf-socialBtn" href="#" aria-label="Twitter"><ion-icon
+                                        name="logo-twitter"></ion-icon></a>
+                                <a class="ssf-socialBtn" href="#" aria-label="Instagram"><ion-icon
+                                        name="logo-instagram"></ion-icon></a>
+                                <a class="ssf-socialBtn" href="#" aria-label="LinkedIn"><ion-icon
+                                        name="logo-linkedin"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="ssf-divider ssf-divider--bottom"></div>
+        
+                <!-- Bottom bar -->
+                <div class="ssf-bottom">
+                    <div class="ssf-bottomLeft">
+                        <p class="ssf-copy">
+                            © <span class="js-ssf-year">2025</span> ShopStore. All rights reserved. Unauthorized use or reproduction of any
+                            content is prohibited.
+                        </p>
+        
+                        <div class="ssf-pay">
+                            <img src="images/pay-visa.png" alt="Visa payment method logo" />
+                            <img src="images/pay-mastercard.png" alt="Mastercard payment method logo" />
+                            <img src="images/pay-paypal.png" alt="PayPal payment method logo" />
+                            <img src="images/pay-skrill.png" alt="Skrill payment method logo" />
+                            <img src="images/pay-klarna.png" alt="Klarna payment method logo" />
+                        </div>
+                    </div>
+        
+                    <nav class="ssf-bottomRight" aria-label="Footer links">
+                        <a href="#">Terms &amp; Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Order Tracking</a>
+                    </nav>
+                </div>
+        
+            </div>
+        </footer>
+        <!-- ========== Footer Section End ========== -->
+
+
+        <script src="js/custom.js"></script>
+        <script>
+            // Update footer year automatically
+            document.addEventListener("DOMContentLoaded", function () {
+                var els = document.querySelectorAll(".js-ssf-year");
+                var year = String(new Date().getFullYear());
+                els.forEach(function (el) {
+                    el.textContent = year;
+                });
+            });
+        </script>
+
+    </body>
+</html>

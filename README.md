@@ -1,3 +1,5 @@
+<img width="1280" height="800" alt="ShopStore-Ecommerce-Landing-Page" src="https://github.com/user-attachments/assets/3f489c51-a6cd-4476-9f5b-55ba595a1a78" />
+
 # ShopStore — Grocery eCommerce Landing Page
 
 ShopStore is a modern, high-converting **grocery eCommerce landing page** built for showcasing products, promotions, and store features with a clean UI and smooth user experience. It’s designed as a **front-end UI template** that can be used for real online grocery shops, product catalogs, or eCommerce theme demos — and can be integrated later with any backend (WooCommerce, Shopify headless, custom APIs, Firebase, etc.).

@@ -507,8 +507,9 @@ button {
     padding: 12px 12px;
     border-radius: 12px;
     background: #f6f6fb;
-    font-weight: 700;
+    font-weight: 600;
     transition: transform .2s var(--ease), background .2s var(--ease);
+    font-size: 14.5px;
 }
 
 .ss-drawer__link:hover {
@@ -1781,16 +1782,14 @@ button {
 .ss7-headLeft {
     display: flex;
     align-items: baseline;
-    gap: 16px;
+    gap: 6px;
     flex-wrap: wrap;
 }
 
 .ss7-title {
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 900;
-    letter-spacing: .3px;
-    text-transform: uppercase;
     color: var(--text);
 }
 

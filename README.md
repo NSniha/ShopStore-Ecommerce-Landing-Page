@@ -8,7 +8,7 @@ This project focuses on **pixel-clean layout**, reusable UI sections, and respon
 
 ---
 
-## Live Preview:  
+## Live Preview: https://legendary-biscotti-ce2363.netlify.app/
 
 ---
 
